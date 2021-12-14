@@ -16,7 +16,8 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     python3 -m pip install --no-cache-dir \
     jupyter \
     tensorflow-cpu \
-    torch
+    torch \
+    onnxruntime
 
 WORKDIR /workspace
 COPY . transformers/
